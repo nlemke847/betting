@@ -1,0 +1,214 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: #37383b;
+    color: #fff;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+.container {
+    padding-left:0;
+    padding-right: 0;
+}
+
+.competitor {
+    width: 100%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.teamName {
+    float:left;
+    width:51%;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 11px;
+}
+
+.teamName img {
+    width:30px;
+    max-height: 20px;
+    margin-right: 10px;
+}
+
+.moneyline {
+    right: 15%;
+    width: 15%;
+    text-align: center;
+}
+
+.spread {
+    right: 30%;
+    width: 17%;
+    text-align: center;
+}
+
+.overUnderHolder {
+    width: 17%;
+    right: 0;
+    height: 1px;
+}
+
+.overUnder {
+    width: 45px;
+    margin: 0 auto;
+
+    .left {
+        float:left;
+        padding-top: 12px;
+    }
+    .right {
+        float: left;
+        font-size: 10px;
+        text-transform: lowercase;
+    }
+}
+
+.overUnderHolder, .moneyline, .spread {
+    font-size:11px;
+    position: absolute;
+    text-align: center;
+    line-height: 24px;
+}
+
+.game {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #2c2d2f;
+    border-top: 1px solid #414245;
+    position: relative;
+}
+
+.header h3 {
+    padding-bottom: 10px;
+}
+
+.date h4 {
+    background: #323335;
+    padding: 10px;
+    border-bottom: 1px solid #2f3031;
+    margin: 0;
+    color: #979797;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.gameTime {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #CACACA;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.header {
+    padding: 10px 0 0 10px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #2f3032;
+    margin-bottom: 0;
+    background: #252628; /* Old browsers */
+    background: -moz-linear-gradient(top,  #252628 0%, #19191b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#252628), color-stop(100%,#19191b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #252628 0%,#19191b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #252628 0%,#19191b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #252628 0%,#19191b 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #252628 0%,#19191b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252628', endColorstr='#19191b',GradientType=0 ); /* IE6-9 */
+}
+@media only screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 768px) {
+    .overUnderHolder, .moneyline, .spread, .teamName, .overUnder .right {
+        font-size:14px;
+    }
+    .gameTime {
+        font-size:16px;
+    }
+    .date h4 {
+        font-size: 18px;
+    }
+}
